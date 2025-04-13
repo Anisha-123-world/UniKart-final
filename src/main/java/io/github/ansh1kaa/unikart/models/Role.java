@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 public class Role {
     @Id
     private String role;
-    private String description;
+    private String roledescription;
     public String getRole() {
         return role;
     }
@@ -16,7 +16,10 @@ public class Role {
         this.role = role;
     }
     public String getDescription() {
-        return description;
+        return roledescription;
+    }
+    public void setDescription(String description) {
+        this.roledescription = description;
     }
 
 
